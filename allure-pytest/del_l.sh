@@ -1,4 +1,4 @@
 # del old build
 rm -rf build
 rm -rf dist
-rm -rf generator_cucumber.egg-info
+rm -rf allure_pytest_il.egg-info
