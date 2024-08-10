@@ -2,5 +2,5 @@
 linter = "flake8 ./src"
 
 [tool.poe.tasks.tests]
-cmd = "pytest ../tests/allure_pytest"
+cmd = "pytest ../tests/allure_pytest_il"
 env = { PYTEST_DISABLE_PLUGIN_AUTOLOAD = "true" }

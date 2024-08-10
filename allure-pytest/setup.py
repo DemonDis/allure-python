@@ -7,7 +7,7 @@ try:
     print("""
     You have pytest-allure-adaptor installed.
     You need to remove pytest-allure-adaptor from your site-packages
-    before installing allure-pytest, or conflicts may result.
+    before installing allure-pytest-il, or conflicts may result.
     """)
     sys.exit()
 except (DistributionNotFound, VersionConflict):
@@ -50,7 +50,8 @@ def get_readme(fname):
 def main():
     setup(
         name=PACKAGE,
-        use_scm_version=prepare_version,
+        # use_scm_version=prepare_version,
+        dynamic = ["version"],
         description="Allure pytest integration",
         url="https://allurereport.org/",
         project_urls={
@@ -64,9 +65,9 @@ def main():
         keywords="allure reporting pytest",
         long_description=get_readme("README.md"),
         long_description_content_type="text/markdown",
-        packages=["allure_pytest"],
-        package_dir={"allure_pytest": "src"},
-        entry_points={"pytest11": ["allure_pytest = allure_pytest.plugin"]},
+        packages=["allure_pytest_il"],
+        package_dir={"allure_pytest_il": "src"},
+        entry_points={"pytest11": ["allure_pytest_il = allure_pytest_il.plugin"]},
         setup_requires=setup_requires,
         install_requires=install_requires
     )

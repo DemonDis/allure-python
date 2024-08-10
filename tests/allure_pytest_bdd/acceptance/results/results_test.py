@@ -1,6 +1,6 @@
 from allure_commons_test.report import AllureReport
 
-from tests.allure_pytest.pytest_runner import AllurePytestRunner
+from tests.allure_pytest_il.pytest_runner import AllurePytestRunner
 
 
 FEATURE_CONTENT = (

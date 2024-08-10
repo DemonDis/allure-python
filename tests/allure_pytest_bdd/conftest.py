@@ -1,5 +1,5 @@
 import pytest
-from tests.allure_pytest.pytest_runner import AllurePytestRunner
+from tests.allure_pytest_il.pytest_runner import AllurePytestRunner
 
 
 @pytest.fixture

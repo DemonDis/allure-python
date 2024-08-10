@@ -3,7 +3,7 @@ from hamcrest import assert_that, empty
 from hamcrest import all_of, is_, is_not
 from hamcrest import has_property, has_value
 from hamcrest import contains_string
-from tests.allure_pytest.pytest_runner import AllurePytestRunner
+from tests.allure_pytest_il.pytest_runner import AllurePytestRunner
 
 
 @pytest.mark.parametrize("capture", ["sys", "fd", "no"])
