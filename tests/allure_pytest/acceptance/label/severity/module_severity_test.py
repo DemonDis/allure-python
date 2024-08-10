@@ -1,4 +1,4 @@
-""" ./allure-pytest-il/examples/label/severity/module_severity.rst """
+""" ./allure-pytest/examples/label/severity/module_severity.rst """
 
 from hamcrest import assert_that
 from tests.allure_pytest.pytest_runner import AllurePytestRunner

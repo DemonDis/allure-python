@@ -1,4 +1,4 @@
-""" ./allure-pytest-il/examples/label/custom/custom_label.rst """
+""" ./allure-pytest/examples/label/custom/custom_label.rst """
 
 from hamcrest import assert_that
 from tests.allure_pytest.pytest_runner import AllurePytestRunner

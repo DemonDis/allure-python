@@ -1,4 +1,4 @@
-""" ./allure-pytest-il/examples/step/step_placeholder.rst """
+""" ./allure-pytest/examples/step/step_placeholder.rst """
 
 from hamcrest import assert_that
 from tests.allure_pytest.pytest_runner import AllurePytestRunner

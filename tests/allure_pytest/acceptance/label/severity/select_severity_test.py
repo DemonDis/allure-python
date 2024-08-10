@@ -1,4 +1,4 @@
-""" ./allure-pytest-il/examples/label/severity/select_tests_by_severity.rst """
+""" ./allure-pytest/examples/label/severity/select_tests_by_severity.rst """
 
 import pytest
 from hamcrest import assert_that, only_contains, any_of, ends_with

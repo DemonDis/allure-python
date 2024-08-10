@@ -7,23 +7,23 @@ on:
 
 jobs:
   pytest-changes:
-    name: Collect allure-pytest-il file changes
+    name: Collect allure-pytest file changes
     runs-on: ubuntu-latest
     outputs:
-      changed: ${{ steps.filter.outputs.allure-pytest-il }}
+      changed: ${{ steps.filter.outputs.allure-pytest }}
     steps:
       - uses: dorny/paths-filter@v3
         id: filter
         with:
           filters: |
-            allure-pytest-il:
-              - allure-pytest-il/**
+            allure-pytest:
+              - allure-pytest/**
               - allure-python-commons/**
               - allure-python-commons-test/**
               - tests/*.py
               - tests/allure_pytest/**
   other-changes:
-    name: Collect file changes other than allure-pytest-il
+    name: Collect file changes other than allure-pytest
     runs-on: ubuntu-latest
     outputs:
       packages: ${{ steps.filter.outputs.changes }}
@@ -44,8 +44,8 @@ jobs:
               - allure-python-commons-test/**
               - tests/*.py
               - tests/allure_nose2/**
-            allure-pytest-il-bdd:
-              - allure-pytest-il-bdd/**
+            allure-pytest-bdd:
+              - allure-pytest-bdd/**
               - allure-python-commons/**
               - allure-python-commons-test/**
               - tests/*.py
@@ -79,7 +79,7 @@ jobs:
         run: poe linter
 
   test-pytest:
-    name: Test allure-pytest-il
+    name: Test allure-pytest
     runs-on: ubuntu-latest
     needs: [pytest-changes]
     if: ${{ needs.pytest-changes.outputs.changed == 'true' }}
@@ -105,13 +105,13 @@ jobs:
         run: |
           pip install ./allure-python-commons \
             ./allure-python-commons-test \
-            ./allure-pytest-il \
+            ./allure-pytest \
             pytest==${{ matrix.pytest-version }} \
             -r ./requirements/testing.txt \
-            -r ./requirements/testing/allure-pytest-il.txt
+            -r ./requirements/testing/allure-pytest.txt
 
-      - name: Test allure-pytest-il
-        working-directory: allure-pytest-il
+      - name: Test allure-pytest
+        working-directory: allure-pytest
         run: poe tests
 
   test-others:
@@ -124,7 +124,7 @@ jobs:
         package: ${{ fromJSON(needs.other-changes.outputs.packages) }}
         python-version: ["3.7", "3.8", "3.9", "3.10", "3.11", "3.12"]
         exclude:
-          - package: allure-pytest-il
+          - package: allure-pytest
     env:
       TEST_TMP: /tmp
       ALLURE_INDENT_OUTPUT: yep

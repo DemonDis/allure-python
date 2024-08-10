@@ -1,4 +1,4 @@
-""" ./allure-pytest-il/examples/parameter/dynamic_parameter.rst """
+""" ./allure-pytest/examples/parameter/dynamic_parameter.rst """
 
 from hamcrest import assert_that
 from tests.allure_pytest.pytest_runner import AllurePytestRunner

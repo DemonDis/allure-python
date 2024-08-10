@@ -1,4 +1,4 @@
-""" ./allure-pytest-il/examples/link/dynamic_link.rst """
+""" ./allure-pytest/examples/link/dynamic_link.rst """
 
 from hamcrest import assert_that, equal_to, all_of
 from tests.allure_pytest.pytest_runner import AllurePytestRunner

@@ -6,7 +6,7 @@ from allure_commons_test.result import has_link, has_issue_link
 
 
 def test_link_pattern(allure_pytest_runner: AllurePytestRunner):
-    """ ./allure-pytest-il/examples/link/dynamic_link.rst """
+    """ ./allure-pytest/examples/link/dynamic_link.rst """
 
     allure_results = allure_pytest_runner.run_docpath_examples(
         "--allure-link-pattern",
