@@ -1,4 +1,4 @@
-"""./allure-pytest/examples/label/severity/class_severity.rst"""
+"""./allure-pytest-il/examples/label/severity/class_severity.rst"""
 
 from hamcrest import assert_that, all_of, is_not
 from tests.allure_pytest.pytest_runner import AllurePytestRunner

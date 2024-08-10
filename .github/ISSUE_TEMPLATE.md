@@ -34,7 +34,7 @@
 
 - Allure version:        2.1.0
 - Test framework:        pytest@3.0
-- Allure adaptor:        allure-pytest@2.0.0b1
+- Allure adaptor:        allure-pytest-il@2.0.0b1
 
 #### Other information 
 

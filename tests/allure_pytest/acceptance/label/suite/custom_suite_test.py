@@ -1,4 +1,4 @@
-""" ./allure-pytest/examples/label/suite/custom_suite.rst """
+""" ./allure-pytest-il/examples/label/suite/custom_suite.rst """
 
 from hamcrest import assert_that, not_
 from tests.allure_pytest.pytest_runner import AllurePytestRunner

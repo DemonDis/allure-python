@@ -1,2 +1,0 @@
-# allure_robotframework testing deps
-robotframework-pabot

@@ -1,4 +1,4 @@
-""" ./allure-pytest/examples/label/custom/select_tests_by_label.rst """
+""" ./allure-pytest-il/examples/label/custom/select_tests_by_label.rst """
 
 import pytest
 from hamcrest import assert_that, all_of

@@ -7,13 +7,13 @@ try:
     print("""
     You have pytest-allure-adaptor installed.
     You need to remove pytest-allure-adaptor from your site-packages
-    before installing allure-pytest, or conflicts may result.
+    before installing allure-pytest-il, or conflicts may result.
     """)
     sys.exit()
 except (DistributionNotFound, VersionConflict):
     pass
 
-PACKAGE = "allure-pytest"
+PACKAGE = "allure-pytest-il"
 
 classifiers = [
     'Development Status :: 5 - Production/Stable',
@@ -22,14 +22,7 @@ classifiers = [
     'License :: OSI Approved :: Apache Software License',
     'Topic :: Software Development :: Quality Assurance',
     'Topic :: Software Development :: Testing',
-    'Programming Language :: Python :: 3',
-    'Programming Language :: Python :: 3 :: Only',
-    'Programming Language :: Python :: 3.7',
     'Programming Language :: Python :: 3.8',
-    'Programming Language :: Python :: 3.9',
-    'Programming Language :: Python :: 3.10',
-    'Programming Language :: Python :: 3.11',
-    'Programming Language :: Python :: 3.12',
 ]
 
 setup_requires = [

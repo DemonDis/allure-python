@@ -1,4 +1,4 @@
-""" ./allure-pytest/examples/label/bdd/bdd_label.rst """
+""" ./allure-pytest-il/examples/label/bdd/bdd_label.rst """
 
 from hamcrest import assert_that
 from tests.allure_pytest.pytest_runner import AllurePytestRunner

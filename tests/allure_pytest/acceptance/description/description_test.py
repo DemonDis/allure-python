@@ -1,4 +1,4 @@
-""" ./allure-pytest/examples/description/description.rst """
+""" ./allure-pytest-il/examples/description/description.rst """
 
 from hamcrest import assert_that, contains_string
 from tests.allure_pytest.pytest_runner import AllurePytestRunner

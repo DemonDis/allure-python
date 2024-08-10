@@ -1,4 +1,4 @@
-""" ./allure-pytest/examples/label/bdd/select_tests_by_bdd.rst """
+""" ./allure-pytest-il/examples/label/bdd/select_tests_by_bdd.rst """
 
 import pytest
 from hamcrest import assert_that, only_contains, any_of, ends_with

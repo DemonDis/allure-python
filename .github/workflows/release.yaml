@@ -47,12 +47,12 @@ jobs:
         twine upload dist/*
         popd
 
-        pushd allure-pytest
+        pushd allure-pytest-il
         python setup.py sdist bdist_wheel
         twine upload dist/*
         popd
 
-        pushd allure-pytest-bdd
+        pushd allure-pytest-il-bdd
         python setup.py sdist bdist_wheel
         twine upload dist/*
         popd
