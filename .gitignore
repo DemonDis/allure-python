@@ -13,3 +13,5 @@
 
 /.allure-report
 /.allure-results
+
+.env
