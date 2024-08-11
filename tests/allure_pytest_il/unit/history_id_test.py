@@ -1,4 +1,4 @@
-from allure_pytest.utils import get_history_id
+from allure_pytest_il.utils import get_history_id
 from allure_commons_il.model2 import Parameter
 
 

@@ -1,5 +1,5 @@
 import allure
-from allure_pytest.utils import allure_title
+from allure_pytest_il.utils import allure_title
 
 
 @allure.issue("733", name="Issue 733")

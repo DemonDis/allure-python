@@ -8,12 +8,12 @@ from allure_commons_il.types import LabelType, Severity
 from allure_commons_il.logger import AllureFileLogger
 from allure_commons_il.utils import get_testplan
 
-from allure_pytest.utils import allure_label, allure_labels, allure_full_name
-from allure_pytest.helper import AllureTestHelper, AllureTitleHelper
-from allure_pytest.listener import AllureListener
+from allure_pytest_il.utils import allure_label, allure_labels, allure_full_name
+from allure_pytest_il.helper import AllureTestHelper, AllureTitleHelper
+from allure_pytest_il.listener import AllureListener
 
-from allure_pytest.utils import ALLURE_DESCRIPTION_MARK, ALLURE_DESCRIPTION_HTML_MARK
-from allure_pytest.utils import ALLURE_LABEL_MARK, ALLURE_LINK_MARK
+from allure_pytest_il.utils import ALLURE_DESCRIPTION_MARK, ALLURE_DESCRIPTION_HTML_MARK
+from allure_pytest_il.utils import ALLURE_LABEL_MARK, ALLURE_LINK_MARK
 
 
 def pytest_addoption(parser):

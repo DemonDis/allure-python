@@ -9,14 +9,7 @@ classifiers = [
     'License :: OSI Approved :: Apache Software License',
     'Topic :: Software Development :: Quality Assurance',
     'Topic :: Software Development :: Testing',
-    'Programming Language :: Python :: 3',
-    'Programming Language :: Python :: 3 :: Only',
-    'Programming Language :: Python :: 3.7',
     'Programming Language :: Python :: 3.8',
-    'Programming Language :: Python :: 3.9',
-    'Programming Language :: Python :: 3.10',
-    'Programming Language :: Python :: 3.11',
-    'Programming Language :: Python :: 3.12',
 ]
 
 install_requires = [
@@ -32,7 +25,8 @@ def get_readme(fname):
 def main():
     setup(
         name=PACKAGE,
-        use_scm_version={"root": "..", "relative_to": __file__},
+        # use_scm_version={"root": "..", "relative_to": __file__},
+        dynamic = ["version"],
         setup_requires=['setuptools_scm'],
         description=(
             "Contains the API for end users as well as helper functions and "

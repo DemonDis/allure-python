@@ -16,16 +16,16 @@ from allure_commons_il.model2 import Parameter
 from allure_commons_il.model2 import Label, Link
 from allure_commons_il.model2 import Status
 from allure_commons_il.types import LabelType, AttachmentType, ParameterMode
-from allure_pytest.utils import allure_description, allure_description_html
-from allure_pytest.utils import allure_labels, allure_links, pytest_markers
-from allure_pytest.utils import allure_full_name, allure_package, allure_name
-from allure_pytest.utils import allure_suite_labels
-from allure_pytest.utils import get_status, get_status_details
-from allure_pytest.utils import get_outcome_status, get_outcome_status_details
-from allure_pytest.utils import get_pytest_report_status
-from allure_pytest.utils import format_allure_link
-from allure_pytest.utils import get_history_id
-from allure_pytest.compat import getfixturedefs
+from allure_pytest_il.utils import allure_description, allure_description_html
+from allure_pytest_il.utils import allure_labels, allure_links, pytest_markers
+from allure_pytest_il.utils import allure_full_name, allure_package, allure_name
+from allure_pytest_il.utils import allure_suite_labels
+from allure_pytest_il.utils import get_status, get_status_details
+from allure_pytest_il.utils import get_outcome_status, get_outcome_status_details
+from allure_pytest_il.utils import get_pytest_report_status
+from allure_pytest_il.utils import format_allure_link
+from allure_pytest_il.utils import get_history_id
+from allure_pytest_il.compat import getfixturedefs
 
 
 class AllureListener:

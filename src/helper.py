@@ -1,8 +1,8 @@
 import pytest
 import allure_commons_il
-from allure_pytest.utils import ALLURE_DESCRIPTION_MARK, ALLURE_DESCRIPTION_HTML_MARK
-from allure_pytest.utils import ALLURE_LABEL_MARK, ALLURE_LINK_MARK
-from allure_pytest.utils import format_allure_link
+from allure_pytest_il.utils import ALLURE_DESCRIPTION_MARK, ALLURE_DESCRIPTION_HTML_MARK
+from allure_pytest_il.utils import ALLURE_LABEL_MARK, ALLURE_LINK_MARK
+from allure_pytest_il.utils import format_allure_link
 
 
 class AllureTitleHelper:
