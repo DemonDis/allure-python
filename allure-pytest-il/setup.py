@@ -51,7 +51,8 @@ def main():
     setup(
         name=PACKAGE,
         # use_scm_version=prepare_version,
-        dynamic = ["version"],
+        # dynamic = ["version"],
+        version='0.0.1',
         description="Allure pytest integration",
         url="https://allurereport.org/",
         project_urls={
