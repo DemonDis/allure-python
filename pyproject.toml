@@ -16,6 +16,5 @@ testpaths = [
     "tests"
 ]
 addopts = [
-    "-p", "no:allure_pytest",
-    "-p", "no:allure_pytest_bdd"
+    "-p", "no:allure_pytest"
 ]

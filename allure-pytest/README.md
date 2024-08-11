@@ -7,7 +7,7 @@
 ## Quick start
 
 ```shell
-$ pip install allure-pytest-il-il
+$ pip install allure-pytest-il
 $ pytest --alluredir=%allure_result_folder% ./tests
 $ allure serve %allure_result_folder%
 ```
