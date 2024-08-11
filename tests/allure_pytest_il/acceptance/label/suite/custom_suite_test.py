@@ -4,8 +4,8 @@ from hamcrest import assert_that, not_
 from tests.allure_pytest_il.pytest_runner import AllurePytestRunner
 
 import allure
-from allure_commons_test.report import has_test_case
-from allure_commons_test.label import has_suite, has_parent_suite, has_sub_suite
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.label import has_suite, has_parent_suite, has_sub_suite
 
 
 def test_custom_suite(allure_pytest_runner: AllurePytestRunner):

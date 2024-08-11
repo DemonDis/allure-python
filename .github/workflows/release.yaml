@@ -27,37 +27,22 @@ jobs:
         TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
         TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
       run: |
-        pushd allure-python-commons-test
+        pushd allure-python-commons-il-test
         python setup.py sdist bdist_wheel
         twine upload dist/*
         popd
 
-        pushd allure-python-commons
+        pushd allure-python-commons-il
         python setup.py sdist bdist_wheel
         twine upload dist/*
         popd
 
-        pushd allure-behave
+        pushd allure-nose2-il
         python setup.py sdist bdist_wheel
         twine upload dist/*
         popd
 
-        pushd allure-nose2
-        python setup.py sdist bdist_wheel
-        twine upload dist/*
-        popd
-
-        pushd allure-pytest
-        python setup.py sdist bdist_wheel
-        twine upload dist/*
-        popd
-
-        pushd allure-pytest-bdd
-        python setup.py sdist bdist_wheel
-        twine upload dist/*
-        popd
-
-        pushd allure-robotframework
+        pushd allure-pytest-il
         python setup.py sdist bdist_wheel
         twine upload dist/*
         popd

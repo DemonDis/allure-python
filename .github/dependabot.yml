@@ -1,31 +1,19 @@
 version: 2
 updates:
 - package-ecosystem: pip
-  directory: "/allure-behave"
+  directory: "/allure-pytest-il"
   schedule:
     interval: daily
     time: "02:00"
   open-pull-requests-limit: 10
 - package-ecosystem: pip
-  directory: "/allure-pytest"
+  directory: "/allure-python-commons-il"
   schedule:
     interval: daily
     time: "02:00"
   open-pull-requests-limit: 10
 - package-ecosystem: pip
-  directory: "/allure-python-commons"
-  schedule:
-    interval: daily
-    time: "02:00"
-  open-pull-requests-limit: 10
-- package-ecosystem: pip
-  directory: "/allure-robotframework"
-  schedule:
-    interval: daily
-    time: "02:00"
-  open-pull-requests-limit: 10
-- package-ecosystem: pip
-  directory: "/allure-python-commons-test"
+  directory: "/allure-python-commons-il-test"
   schedule:
     interval: daily
     time: "02:00"

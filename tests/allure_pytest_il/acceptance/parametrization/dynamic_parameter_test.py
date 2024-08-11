@@ -3,8 +3,8 @@
 from hamcrest import assert_that
 from tests.allure_pytest_il.pytest_runner import AllurePytestRunner
 
-from allure_commons_test.report import has_test_case
-from allure_commons_test.result import (
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.result import (
     has_parameter,
     get_parameter_matcher,
     with_excluded,

@@ -2,8 +2,8 @@ from hamcrest import assert_that
 from tests.allure_pytest_il.pytest_runner import AllurePytestRunner
 
 import allure
-from allure_commons_test.report import has_test_case
-from allure_commons_test.result import has_history_id
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.result import has_history_id
 
 
 def test_history_id(allure_pytest_runner: AllurePytestRunner):
@@ -107,7 +107,7 @@ def test_different_byte_arrays_are_distinguishable(
     allure_pytest_runner: AllurePytestRunner
 ):
     """
-    The 'allure_commons.utils.represent' function used to convert allure
+    The 'allure_commons_il.utils.represent' function used to convert allure
     parameter values to strings makes all byte arrays indistinguishable.
     Some extra effort is required to properly calculate 'historyId' on tests
     that are parametrized with byte arrays.

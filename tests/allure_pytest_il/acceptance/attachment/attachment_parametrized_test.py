@@ -3,8 +3,8 @@ from hamcrest import all_of
 from hamcrest import equal_to
 from tests.allure_pytest_il.pytest_runner import AllurePytestRunner
 
-from allure_commons_test.report import has_test_case
-from allure_commons_test.result import has_attachment_with_content
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.result import has_attachment_with_content
 
 
 def test_parametrized_attachment(allure_pytest_runner: AllurePytestRunner):

@@ -3,8 +3,8 @@
 import pytest
 from tests.allure_behave.behave_runner import AllureBehaveRunner
 from hamcrest import assert_that
-from allure_commons_test.report import has_test_case
-from allure_commons_test.label import has_tag
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.label import has_tag
 
 
 @pytest.mark.parametrize(["feature_id", "scenario", "tags"], [

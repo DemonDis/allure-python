@@ -3,8 +3,8 @@
 from hamcrest import assert_that, all_of, is_not
 from tests.allure_pytest_il.pytest_runner import AllurePytestRunner
 
-from allure_commons_test.report import has_test_case
-from allure_commons_test.label import has_severity
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.label import has_severity
 
 
 def test_decorated_class_not_decorated_method(

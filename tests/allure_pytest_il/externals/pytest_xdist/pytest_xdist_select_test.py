@@ -3,7 +3,7 @@ from hamcrest import assert_that, ends_with, has_entry
 from tests.allure_pytest_il.pytest_runner import AllurePytestRunner
 
 import allure
-from allure_commons_test.report import has_only_testcases
+from allure_commons_il_test.report import has_only_testcases
 
 
 @pytest.fixture

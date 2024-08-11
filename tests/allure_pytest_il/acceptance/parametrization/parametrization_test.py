@@ -1,10 +1,10 @@
 from hamcrest import assert_that, has_entry, ends_with, all_of
 from tests.allure_pytest_il.pytest_runner import AllurePytestRunner
 
-from allure_commons_test.report import has_test_case
-from allure_commons_test.result import has_parameter
-from allure_commons_test.result import with_excluded
-from allure_commons_test.result import with_mode
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.result import has_parameter
+from allure_commons_il_test.result import with_excluded
+from allure_commons_il_test.result import with_mode
 
 
 def test_parametrization(allure_pytest_runner: AllurePytestRunner):

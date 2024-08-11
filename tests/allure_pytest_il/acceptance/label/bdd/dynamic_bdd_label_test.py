@@ -4,8 +4,8 @@ import pytest
 from hamcrest import assert_that
 from tests.allure_pytest_il.pytest_runner import AllurePytestRunner
 
-from allure_commons_test.report import has_test_case
-from allure_commons_test.label import has_feature, has_epic, has_story
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.label import has_feature, has_epic, has_story
 
 
 def test_dynamic_labels(allure_pytest_runner: AllurePytestRunner):

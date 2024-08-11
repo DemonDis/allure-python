@@ -3,8 +3,8 @@
 from hamcrest import assert_that, contains_string
 from tests.allure_pytest_il.pytest_runner import AllurePytestRunner
 
-from allure_commons_test.report import has_test_case
-from allure_commons_test.result import has_description, has_description_html
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.result import has_description, has_description_html
 
 
 def test_description(allure_pytest_runner: AllurePytestRunner):

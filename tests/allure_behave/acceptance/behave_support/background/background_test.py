@@ -1,9 +1,9 @@
 import pytest
 from hamcrest import assert_that, all_of
 from tests.allure_behave.behave_runner import AllureBehaveRunner
-from allure_commons_test.report import has_test_case
-from allure_commons_test.result import with_status
-from allure_commons_test.result import has_step
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.result import with_status
+from allure_commons_il_test.result import has_step
 
 
 @pytest.mark.parametrize(

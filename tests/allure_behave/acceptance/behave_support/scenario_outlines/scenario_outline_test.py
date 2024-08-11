@@ -1,8 +1,8 @@
 from hamcrest import assert_that, all_of, has_entry
 from tests.allure_behave.behave_runner import AllureBehaveRunner
-from allure_commons_test.report import has_only_testcases
-from allure_commons_test.result import with_status
-from allure_commons_test.result import has_parameter
+from allure_commons_il_test.report import has_only_testcases
+from allure_commons_il_test.result import with_status
+from allure_commons_il_test.result import has_parameter
 
 
 def test_outline_with_single_table(behave_runner: AllureBehaveRunner):

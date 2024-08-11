@@ -154,7 +154,7 @@ class AllureBehaveRunner(AllureFrameworkRunner):
             options (Sequence[str]): behave CLI options
 
         Returns:
-            allure_commons.logger.AllureMemoryLogger: the allure results of the
+            allure_commons_il.logger.AllureMemoryLogger: the allure results of the
                 run. The results of the last run are also accessible through the
                 :attr:`allure_results` attribute.
 

@@ -1,9 +1,9 @@
 from hamcrest import assert_that
 from tests.allure_nose2.nose2_runner import AllureNose2Runner
 
-from allure_commons_test.report import has_test_case
-from allure_commons_test.label import has_epic
-from allure_commons_test.label import has_feature
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.label import has_epic
+from allure_commons_il_test.label import has_feature
 
 
 def test_method_label(nose2_runner: AllureNose2Runner):

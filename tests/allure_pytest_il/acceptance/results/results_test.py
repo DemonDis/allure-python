@@ -1,4 +1,4 @@
-from allure_commons_test.report import AllureReport
+from allure_commons_il_test.report import AllureReport
 
 from tests.allure_pytest_il.pytest_runner import AllurePytestRunner
 

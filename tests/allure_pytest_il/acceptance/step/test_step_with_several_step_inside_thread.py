@@ -1,8 +1,8 @@
 from hamcrest import assert_that
 from tests.allure_pytest_il.pytest_runner import AllurePytestRunner
 
-from allure_commons_test.report import has_test_case
-from allure_commons_test.result import has_step
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.result import has_step
 
 
 def test_step_with_thread(allure_pytest_runner: AllurePytestRunner):

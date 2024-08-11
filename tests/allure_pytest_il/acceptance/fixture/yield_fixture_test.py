@@ -3,10 +3,10 @@ from hamcrest import assert_that, not_, all_of
 from tests.allure_pytest_il.pytest_runner import AllurePytestRunner
 
 import allure
-from allure_commons_test.container import has_before
-from allure_commons_test.container import has_container
-from allure_commons_test.report import has_test_case
-from allure_commons_test.result import has_step
+from allure_commons_il_test.container import has_before
+from allure_commons_il_test.container import has_container
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.result import has_step
 
 
 @allure.feature("Fixture")

@@ -3,9 +3,9 @@ import pytest
 from hamcrest import assert_that, has_entry, greater_than, all_of, less_than
 from tests.allure_pytest_il.pytest_runner import AllurePytestRunner
 
-from allure_commons_test.report import has_test_case
-from allure_commons_test.result import with_status
-from allure_commons.utils import now
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.result import with_status
+from allure_commons_il.utils import now
 
 
 snippets = [

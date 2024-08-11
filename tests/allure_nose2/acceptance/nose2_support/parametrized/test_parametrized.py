@@ -1,8 +1,8 @@
 from hamcrest import assert_that, all_of
 from tests.allure_nose2.nose2_runner import AllureNose2Runner
 
-from allure_commons_test.report import has_test_case
-from allure_commons_test.result import has_parameter
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.result import has_parameter
 
 
 def test_parametrized_func(nose2_runner: AllureNose2Runner):

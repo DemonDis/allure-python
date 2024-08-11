@@ -3,5 +3,5 @@ max-line-length = 120
 import-order-style = google
 inline-quotes = "
 per-file-ignores =
-    ./allure-python-commons/src/model2.py:A003
-    ./allure-python-commons/src/types.py:A005
+    ./allure-python-commons-il/src/model2.py:A003
+    ./allure-python-commons-il/src/types.py:A005

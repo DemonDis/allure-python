@@ -2,13 +2,13 @@ from hamcrest import assert_that
 from tests.allure_pytest_il.pytest_runner import AllurePytestRunner
 
 import allure
-from allure_commons_test.report import has_test_case
-from allure_commons_test.result import with_status
-from allure_commons_test.result import has_status_details
-from allure_commons_test.result import with_message_contains
-from allure_commons_test.result import with_trace_contains
-from allure_commons_test.container import has_container
-from allure_commons_test.container import has_before
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.result import with_status
+from allure_commons_il_test.result import has_status_details
+from allure_commons_il_test.result import with_message_contains
+from allure_commons_il_test.result import with_trace_contains
+from allure_commons_il_test.container import has_container
+from allure_commons_il_test.container import has_before
 
 
 @allure.feature("Fixture")

@@ -1,5 +1,5 @@
 from allure_pytest.utils import get_history_id
-from allure_commons.model2 import Parameter
+from allure_commons_il.model2 import Parameter
 
 
 def test_no_dependency_on_parameters_order():

@@ -2,10 +2,10 @@
 
 from tests.allure_behave.behave_runner import AllureBehaveRunner
 from hamcrest import assert_that, equal_to
-from allure_commons_test.report import has_test_case
-from allure_commons_test.result import has_attachment_with_content
-from allure_commons_test.result import has_attachment
-from allure_commons_test.result import has_step
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.result import has_attachment_with_content
+from allure_commons_il_test.result import has_attachment
+from allure_commons_il_test.result import has_step
 
 
 def test_data_attachment_from_step(behave_runner: AllureBehaveRunner):

@@ -4,9 +4,9 @@ from itertools import combinations_with_replacement
 from tests.allure_pytest_il.pytest_runner import AllurePytestRunner
 
 import allure
-from allure_commons_test.report import has_test_case
-from allure_commons_test.container import has_container, has_before, has_after
-from allure_commons_test.result import has_step
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.container import has_container, has_before, has_after
+from allure_commons_il_test.result import has_step
 
 fixture_scopes = ["session", "module", "class", "function"]
 

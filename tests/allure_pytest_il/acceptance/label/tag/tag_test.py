@@ -1,8 +1,8 @@
 from hamcrest import assert_that, not_
 from tests.allure_pytest_il.pytest_runner import AllurePytestRunner
 
-from allure_commons_test.report import has_test_case
-from allure_commons_test.label import has_tag
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.label import has_tag
 
 
 def test_pytest_marker(allure_pytest_runner: AllurePytestRunner):

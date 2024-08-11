@@ -3,9 +3,9 @@
 from hamcrest import assert_that, equal_to, all_of
 from tests.allure_pytest_il.pytest_runner import AllurePytestRunner
 
-from allure_commons_test.report import has_test_case
-from allure_commons_test.result import has_link
-from allure_commons_test.result import has_issue_link
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.result import has_link
+from allure_commons_il_test.result import has_issue_link
 
 
 def test_dynamic_link(allure_pytest_runner: AllurePytestRunner):

@@ -2,11 +2,11 @@
 
 from tests.allure_behave.behave_runner import AllureBehaveRunner
 from hamcrest import assert_that, all_of
-from allure_commons_test.report import has_test_case
-from allure_commons_test.result import with_status
-from allure_commons_test.result import has_link
-from allure_commons_test.result import has_issue_link
-from allure_commons_test.result import has_test_case_link
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.result import with_status
+from allure_commons_il_test.result import has_link
+from allure_commons_il_test.result import has_issue_link
+from allure_commons_il_test.result import has_test_case_link
 
 
 def test_link_on_scenario_level(behave_runner: AllureBehaveRunner):

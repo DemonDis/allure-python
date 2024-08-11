@@ -2,7 +2,7 @@ import allure
 import pytest
 
 from allure_behave.utils import step_table
-from allure_commons_test.content import csv_equivalent
+from allure_commons_il_test.content import csv_equivalent
 from hamcrest import assert_that
 
 

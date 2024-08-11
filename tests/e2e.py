@@ -17,9 +17,9 @@ from pathlib import Path
 from pytest import FixtureRequest, Pytester, MonkeyPatch
 from typing import Tuple, Mapping, TypeVar, Generator, Callable, Union
 
-import allure_commons
-from allure_commons.logger import AllureMemoryLogger
-from allure_commons_test.report import AllureReport
+import allure_commons_il
+from allure_commons_il.logger import AllureMemoryLogger
+from allure_commons_il_test.report import AllureReport
 
 
 PathlikeT = Union[str, Path]
@@ -71,9 +71,9 @@ def allure_in_memory_context(
 
     Arguments:
         *paths (str): paths to classes to replace with the in-memory logger in
-            addition to :code:`"allure_commons.logger.AllureFileLogger"`.
+            addition to :code:`"allure_commons_il.logger.AllureFileLogger"`.
             Provide these if the integration under test imports the logger using
-            the :code:`from allure_commons.logger import AllureFileLogger`
+            the :code:`from allure_commons_il.logger import AllureFileLogger`
             syntax.
 
     Yields:
@@ -85,7 +85,7 @@ def allure_in_memory_context(
     # Plugin context must be set first, because mock patching may cause
     # module loading, thus, side effects, including allure decorators evaluation
     # (and that requires all plugins of nested allure to already be in place).
-    paths = ("allure_commons.logger.AllureFileLogger",) + paths
+    paths = ("allure_commons_il.logger.AllureFileLogger",) + paths
     with allure_plugin_context():
         logger = AllureMemoryLogger()
         with ExitStack() as stack:
@@ -626,12 +626,12 @@ class AllureFrameworkRunner:
 
 
 def __pop_all_allure_plugins():
-    name_plugin_tuples = allure_commons.plugin_manager.list_name_plugin()
+    name_plugin_tuples = allure_commons_il.plugin_manager.list_name_plugin()
     for name, plugin in name_plugin_tuples:
-        allure_commons.plugin_manager.unregister(plugin=plugin, name=name)
+        allure_commons_il.plugin_manager.unregister(plugin=plugin, name=name)
     return name_plugin_tuples
 
 
 def __restore_allure_plugins(name_plugin_tuples):
     for name, plugin in name_plugin_tuples:
-        allure_commons.plugin_manager.register(plugin, name)
+        allure_commons_il.plugin_manager.register(plugin, name)

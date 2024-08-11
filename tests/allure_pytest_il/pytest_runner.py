@@ -4,7 +4,7 @@ from pytest import FixtureRequest, Pytester, StashKey
 from tests.e2e import AllureFrameworkRunner, altered_env, PathlikeT
 from typing import Sequence, Tuple, Union
 
-from allure_commons.logger import AllureMemoryLogger
+from allure_commons_il.logger import AllureMemoryLogger
 
 
 class AllurePytestRunner(AllureFrameworkRunner):
@@ -63,7 +63,7 @@ class AllurePytestRunner(AllureFrameworkRunner):
             testplan (dict): an optional allure testplan data.
 
         Returns:
-            allure_commons.logger.AllureMemoryLogger: allure results that were
+            allure_commons_il.logger.AllureMemoryLogger: allure results that were
                 collected during the test run.
         """
         docstring = self._find_docstring()
@@ -102,7 +102,7 @@ class AllurePytestRunner(AllureFrameworkRunner):
                 any given test.
 
         Returns:
-            allure_commons.logger.AllureMemoryLogger: allure results that were
+            allure_commons_il.logger.AllureMemoryLogger: allure results that were
                 collected during the test run.
         """
 
@@ -142,7 +142,7 @@ class AllurePytestRunner(AllureFrameworkRunner):
             testplan (dict): an optional allure testplan data.
 
         Returns:
-            allure_commons.logger.AllureMemoryLogger: allure results that were
+            allure_commons_il.logger.AllureMemoryLogger: allure results that were
                 collected during the test run.
         """
 

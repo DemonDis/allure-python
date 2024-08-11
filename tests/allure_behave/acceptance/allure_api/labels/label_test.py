@@ -2,9 +2,9 @@
 
 from tests.allure_behave.behave_runner import AllureBehaveRunner
 from hamcrest import assert_that
-from allure_commons_test.report import has_test_case
-from allure_commons_test.result import with_status
-from allure_commons_test.label import has_label
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.result import with_status
+from allure_commons_il_test.label import has_label
 
 
 def test_label_from_feature_file(behave_runner: AllureBehaveRunner):

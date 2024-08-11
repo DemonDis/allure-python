@@ -1,7 +1,7 @@
 """ ./allure-behave/examples/testplan.rst """
 
-from allure_commons_test.report import has_test_case
-from allure_commons_test.result import with_status
+from allure_commons_il_test.report import has_test_case
+from allure_commons_il_test.result import with_status
 from hamcrest import assert_that, all_of, not_
 from tests.allure_behave.behave_runner import AllureBehaveRunner
 
