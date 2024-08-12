@@ -26,7 +26,8 @@ def main():
     setup(
         name=PACKAGE,
         # use_scm_version={"root": "..", "relative_to": __file__},
-        dynamic = ["version"],
+        # dynamic = ["version"],
+        version='0.0.1',
         setup_requires=['setuptools_scm'],
         description=(
             "Contains the API for end users as well as helper functions and "
