@@ -1,7 +1,7 @@
 ## Allure Pytest Plugin 
 
-[Копия проекта allure pytest 2.13.5](https://pypi.org/project/allure-pytest/) 
-[Копия проекта allure-python 2.13.5](https://github.com/allure-framework/allure-python) 
+[Копия проекта allure pytest 2.13.5](https://pypi.org/project/allure-pytest/)  
+[Копия проекта allure-python 2.13.5](https://github.com/allure-framework/allure-python)  
 
 ---
 
