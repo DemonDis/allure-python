@@ -56,8 +56,7 @@ def main():
         description="Allure pytest integration",
         url="https://allurereport.org/",
         project_urls={
-            "Documentation": "https://allurereport.org/docs/pytest/",
-            "Source": "https://github.com/allure-framework/allure-python",
+            "Source": "https://github.com/DemonDis/allure-python",
         },
         author="Qameta Software Inc., Stanislav Seliverstov",
         author_email="sseliverstov@qameta.io",

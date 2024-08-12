@@ -35,7 +35,7 @@ def main():
         ),
         url="https://allurereport.org/",
         project_urls={
-            "Source": "https://github.com/allure-framework/allure-python",
+            "Source": "https://github.com/DemonDis/allure-python",
         },
         author="Qameta Software Inc., Stanislav Seliverstov",
         author_email="sseliverstov@qameta.io",
