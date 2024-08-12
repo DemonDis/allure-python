@@ -15,3 +15,4 @@
 /.allure-results
 
 .env
+logs/
